@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Check if the file 'demo.bag' already exists
 if [ -f "demo.bag" ]; then

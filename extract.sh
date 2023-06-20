@@ -14,4 +14,4 @@ if [ "$#" -ne 1 ]; then
     exit 1
 fi
 
-./filter_bag.bash "$1" "$TOPICS"
+./filter_bag.sh "$1" "$TOPICS"

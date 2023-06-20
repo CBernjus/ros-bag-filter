@@ -20,12 +20,12 @@ refer to the ROS documentation: http://wiki.ros.org/ROS/Installation
 
 Make sure the scripts you want to use are executable:
 ```bash
-chmod +x extract.bash
+chmod +x extract.sh
 ```
 
 ## Predefined Topics
 
-In the `extract.bash` script, you will find predefined topics.
+In the `extract.sh` script, you will find predefined topics.
 You can use this script to perform the filtering operation with the predefined topics
 by providing the bag file path as an argument:
 
@@ -33,29 +33,29 @@ by providing the bag file path as an argument:
 ./extract.sh /path/to/rosbag.bag
 ```
 
-**Note:** You can modify the predefined `extract.bash` script to use your own topics.
+**Note:** You can modify the predefined `extract.sh` script to use your own topics.
 
 ---
 
 ## Usage
 
-If you want to use your own topics you can either modify the predefined `extract.bash`
-or run the `filter_bag.bash` script directly using the following command:
+If you want to use your own topics you can either modify the predefined `extract.sh`
+or run the `filter_bag.sh` script directly using the following command:
 
 ```bash
-./filter_bag.bash /path/to/rosbag.bag topic1 topic2 ...
+./filter_bag.sh /path/to/rosbag.bag topic1 topic2 ...
 ```
 Replace `/path/to/rosbag.bag` with the path to the ROS bag file you want to filter.
 Replace `topic1 topic2 ...` with the desired topics to extract.
 
 **Example:**
 ```bash
-./filter_bag.bash /path/to/rosbag.bag /image_raw /radar/points /radar/range
+./filter_bag.sh /path/to/rosbag.bag /image_raw /radar/points /radar/range
 ```
 
 ## Downloading a Sample Bag
 
-To experiment with the script, you can use the `download_demo_bag.bash`
+To experiment with the script, you can use the `download_demo_bag.sh`
 script to download a sample bag. <br>
 Run the following command:
 
