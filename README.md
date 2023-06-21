@@ -1,6 +1,6 @@
 # Bag Filtering Script
 
-This set of scripts help you filter ROS bag files based on custom topics.
+This set of scripts helps you filter ROS bag files based on custom topics.
 
 1. For each bag a new folder in the current working directory will be created named `BAG_NAME_filtered`.
 2. It saves the filtered data in a new bag file `BAG_NAME_filtered.bag` inside this folder.
